@@ -33,8 +33,6 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 call plug#end()
 
-silent! colorscheme tokyonight
-
 " let g:lsp_settings = { 'clangd': {'cmd': ['clangd-18', '.'], 'allowlist': ['c', 'cpp']}}
 lua << EOF
 require("bufferline").setup{
@@ -48,5 +46,8 @@ options = {
         }
 }
 }
+
+require("tokyonight").setup()
 EOF
 
+silent! colorscheme tokyonight
