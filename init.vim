@@ -23,7 +23,7 @@ Plug 'echasnovski/mini.nvim'
 Plug 'folke/todo-comments.nvim'
 
 " Colorschemes
-Plug 'folke/tokyonight.nvim', {'dir': '~/.config/nvim/colors'}
+Plug 'folke/tokyonight.nvim'
 
 " LSP
 Plug 'prabirshrestha/vim-lsp'
@@ -33,7 +33,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 call plug#end()
 
-colorscheme tokyonight
+silent! colorscheme tokyonight
 
 " let g:lsp_settings = { 'clangd': {'cmd': ['clangd-18', '.'], 'allowlist': ['c', 'cpp']}}
 lua << EOF
